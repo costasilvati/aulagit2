@@ -1,0 +1,29 @@
+/* Seletor de elemento */
+body{
+    background-color: #D5CBDA;
+    font-family:Arial, Helvetica, sans-serifs;
+}
+
+/* Seletor de classes */
+.centraliza{
+    text-align: center;
+}
+
+.line{
+    display: inline;
+}
+
+li{
+    padding: 0.6%;
+}
+
+nav{
+    border: solid;
+    text-align: center;
+    background-color: #9392E0;
+    padding: 0.6%;
+}
+
+#pessoais{
+    border-style: groove;
+}
