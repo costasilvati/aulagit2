@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Aula 10/09/2024</title>
+</head>
+<body>
+    <div>
+        <h1>Formulários + CSS Flex</h1>
+    </div>
+    <div class="alinhaform">
+        <form action="#" method="get">
+            <!-- Todas as inputs devem estar entre <form> e </form>-->
+           <div>
+                <label for="comment">Comentário</label>
+                <textarea name="c" id="comment" cols="50" rows="10">
+                </textarea> 
+           </div>
+           <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="n" id="nome" 
+                                        minlength="2" maxlength="10">
+           </div>
+           <div>
+                <label for="fone">Telefone</label>
+                <input type="tel" name="t" id="fone">
+           </div>
+           <div>
+                <label for="senha">Senha*</label>
+                <input type="password" name="s" id="senha" required>
+           </div>
+           <div>
+                <label for="mail">E-mail*</label>
+                <input type="email" name="e" id="mail" required
+                                                    placeholder="email@email.com">
+           </div>
+           <div>
+                <label for="nascimento">Data de nascimento</label>
+                <input type="date" name="nasc" id="nascimento">
+           </div>
+           <div>
+                <label for="qtd">Quantidade</label>
+                <input type="number" name="q" id="qtd" min="2" max="20">
+                <!-- 
+                Se quiser valores decimais adicione a 
+                propriedade step="2" (para duas casas decimais)
+                -->
+           </div>
+           <div>
+                <p>Você é feliz? (raidio)</p>
+                <label for="sim">Sim</label>
+                <input type="radio" name="f" id="sim" value="sim">
+                <label for="nao">Não</label>
+                <input type="radio" name="f" id="nao" value="nao">
+           </div>
+           <div>
+                <p>Interesses músicais</p>
+                <label for="s">Samba</label>
+                <input type="checkbox" name="samba" id="s" value="samba">
+                <label for="r">Rock</label>
+                <input type="checkbox" name="rock" id="r" value="rock">
+                <label for="sr">Sertanejo</label>
+                <input type="checkbox" name="sertanejo" id="sr" value="sertanejo">
+           </div>
+           <div>
+                <label for="c1">Curso</label>
+                <select name="curso" id="c1">
+                    <option value="1">Análise e Des de Sistemas</option>
+                    <option value="2" selected>Engenharia de Software</option>
+                    <option value="3">Biomedicina</option>
+                    <option value="4">Odontologia</option>
+                </select>
+           </div>
+           <input type="submit" name="salvar" id="sv" value="Salvar">
+        </form>
+    </div>
+</body>
+</html>
